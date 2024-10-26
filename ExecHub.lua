@@ -4,108 +4,52 @@ local frame = Instance.New("Frame",gui)
 frame.BackgroundTransparency = 1
 local TButton = Instance.New("TextButton",frame)
 local TButtonDrag = Instance.New("LocalScript",TButton)
---i did not code this it was from another pastebin--
-LocalScript.source = ({ local UserInputService = game:GetService('UserInputService')
+LocalScript.Name = STButtonDrag
+STButtonDrag.source = ({
+local function MakeDraggable(DragPoint, Main)
+    pcall(function()
+        local Dragging, DragInput, MousePos, FramePos = false
 
-local frame = script.Parent
+        AddConnection(DragPoint.InputBegan, function(Input)
+            if Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch then
+                Dragging = true
+                MousePos = Input.Position
+                FramePos = Main.Position
 
-local leadFrame = Instance.new('Frame') do
-	leadFrame.AnchorPoint = frame.AnchorPoint
-	leadFrame.Position = frame.Position
-	leadFrame.Size = frame.Size
-	leadFrame.Name = `Lead {frame.Name}`
-	leadFrame.Visible = false
-	leadFrame.Parent = frame.Parent
-end })
+                Input.Changed:Connect(function()
+                    if Input.UserInputState == Enum.UserInputState.End then
+                        Dragging = false
+                    end
+                end)
+            end
+        end)
 
+        AddConnection(DragPoint.InputChanged, function(Input)
+            if Input.UserInputType == Enum.UserInputType.MouseMovement or Input.UserInputType == Enum.UserInputType.Touch then
+                DragInput = Input
+            end
+        end)
 
-local screenGui = frame:FindFirstAncestorOfClass('ScreenGui')
-
-local inputChanged = nil
-local inputEnded = nil
-
-local function getBoundsRelations(guiObject : GuiObject)
-	local bounds = screenGui.AbsoluteSize
-	local topLeft = screenGui.IgnoreGuiInset and guiObject.AbsolutePosition + Vector2.new(0, 36) or guiObject.AbsolutePosition
-	local bottomRight = topLeft + guiObject.AbsoluteSize
-	
-	local boundRelations = {
-		Top = topLeft.Y < 0 and math.abs(topLeft.Y) or nil,
-		Left = topLeft.X < 0 and math.abs(topLeft.X) or nil,
-		Right = bottomRight.X > bounds.X and math.abs(bottomRight.X - bounds.X) or nil,
-		Bottom = bottomRight.Y > bounds.Y and math.abs(bottomRight.Y - bounds.Y) or nil,
-	}
-	
-	return (not boundRelations.Top
-		and not boundRelations.Bottom
-		and not boundRelations.Left
-		and not boundRelations.Right), boundRelations
-end
-
-frame.InputBegan:Connect(function(inputObject : InputObject)
-	if inputObject.UserInputType == Enum.UserInputType.MouseButton1 then
-		
-		local lastMousePosition = UserInputService:GetMouseLocation()
-		local goalPosition = frame.Position
-		
-		inputChanged = UserInputService.InputChanged:Connect(function(input : InputObject, event : boolean)
-			if input.UserInputType == Enum.UserInputType.MouseMovement then
-				local currentMousePosition = UserInputService:GetMouseLocation()
-				local mouseDelta = currentMousePosition - lastMousePosition
-				
-				goalPosition += UDim2.fromOffset(mouseDelta.X, mouseDelta.Y)
-				
-				leadFrame.Position = goalPosition
-				
-				local isInBounds, relations = getBoundsRelations(leadFrame)
-				
-				if not isInBounds then
-					local x = (relations.Left or 0) - (relations.Right or 0)
-					local y = (relations.Top or 0) - (relations.Bottom or 0)
-					
-					goalPosition += UDim2.fromOffset(x, y)
-				end
-				
-				frame.Position = goalPosition
-				lastMousePosition = currentMousePosition
-			end
-		end)
-		
-		inputEnded = frame.InputEnded:Connect(function(input : InputObject)
-			if input.UserInputType == Enum.UserInputType.MouseButton1 then
-				inputChanged:Disconnect()
-				inputChanged = nil
-				
-				inputEnded:Disconnect()
-				inputEnded = nil
-			end
-		end)
-	end
-end)
-
-frame.Destroying:Once(function()
-	
-	leadFrame = leadFrame:Destroy()
-	
-	if inputChanged  then
-		inputChanged:Disconnect()
-		inputChanged = nil
-	end
-	
-	if inputEnded then
-		inputEnded:Disconnect()
-		inputEnded = nil
-	end
-end)
-})
-
+        AddConnection(UserInputService.InputChanged, function(Input)
+            if Input == DragInput and Dragging then
+                local Delta = Input.Position - MousePos
+                Main.Position = UDim2.new(
+                    FramePos.X.Scale, FramePos.X.Offset + Delta.X,
+                    FramePos.Y.Scale, FramePos.Y.Offset + Delta.Y
+                )
+            end
+        end)
+    end)
+end 
+)}
+MakeDraggable
 TButton.Text = Toggle GUI
 TButton.Size.Y = 0.5
 TButton.Size.X = 0.5
 local TCorners = Instance.New("UICorners",TButton)
 local STButton = Instance.New("LocalScript",TButton)
 STButton.source = local UserInputService = game:GetService('UserInputService')
-
+--Orion Library down here!!--
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Executors", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
