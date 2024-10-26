@@ -1,12 +1,11 @@
 --toggle button yay--
-({
 local gui = Instance.New("ScreenGUI",game.PlayerGUI)
 local frame = Instance.New("Frame",gui)
 frame.BackgroundTransparency = 1
 local TButton = Instance.New("TextButton",frame)
 local TButtonDrag = Instance.New("LocalScript",TButton)
-({ --i did not code this it was from another pastebin--
-TButtonDrag.source = local UserInputService = game:GetService('UserInputService')
+--i did not code this it was from another pastebin--
+LocalScript.source = ({ local UserInputService = game:GetService('UserInputService')
 
 local frame = script.Parent
 
@@ -17,7 +16,8 @@ local leadFrame = Instance.new('Frame') do
 	leadFrame.Name = `Lead {frame.Name}`
 	leadFrame.Visible = false
 	leadFrame.Parent = frame.Parent
-end
+end })
+
 
 local screenGui = frame:FindFirstAncestorOfClass('ScreenGui')
 
