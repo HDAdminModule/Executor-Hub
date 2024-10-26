@@ -61,6 +61,10 @@ local Tab2 = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Section = Tab:AddSection({
+    Name = "Keyboard"
+})
+
 Tab2:AddButton({
     Name = "[Built-In Keyboard] Rochips Universal",
     Callback = function()
