@@ -6,7 +6,7 @@ local Window = OrionLib:MakeWindow({Name = "Executors", HidePremium = false, Sav
 
 local Tab = Window:MakeTab({
 	Name = "Home",
-	Icon = "rbxassetid://133975067822497",
+	Icon = "rbxassetid://77277909292934",
 	PremiumOnly = false
 })
 
@@ -27,7 +27,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "hai ..PlrName.. !",
+	Name = "hai" ..PlrName.. "!",
 	Callback = function()
   	end    
 })
