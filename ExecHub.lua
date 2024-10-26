@@ -1,9 +1,42 @@
+local PlrName = game.Players.LocalPlayer.Name
 
 local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/WRUyYTdY')))()
 
 local Window = OrionLib:MakeWindow({Name = "Executors", HidePremium = false, SaveConfig = true, ConfigFolder = nil})
 
+local Tab = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://133975067822497",
+	PremiumOnly = false
+})
 
+local Section = Tab:AddSection({
+	Name = "credits and stuf"
+})
+
+Tab:AddButton({
+	Name = "thx giang hub for not obfuscating",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "this hub is created using orion library",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "hai ..PlrName.. !",
+	Callback = function()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "created by ya boi baconler",
+	Callback = function()
+  	end    
+})
 
 local Tab = Window:MakeTab({
 	Name = "Executors",
