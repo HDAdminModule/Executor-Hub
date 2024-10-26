@@ -2,6 +2,20 @@
 local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/WRUyYTdY')))()
 
 local Window = OrionLib:MakeWindow({Name = "Executors", HidePremium = false, SaveConfig = true, ConfigFolder = nil})
+local Tab2 = Window:MakeTab({
+	Name = "Keyboard",
+	Icon = "rbxassetid://4483345998,
+	PremiumOnly = false
+})
+local Section2 = Tab2:AddSection({
+	Name = "Keyboard"
+})
+Tab2:AddButton({
+	Name = "[Keyboard] Rochips Universal"
+	Callback = function()
+	loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Rochips-universal-18049"))()
+	end
+})
 
 local Tab1 = Window:MakeTab({
 	Name = "Executors",
@@ -54,21 +68,6 @@ Tab1:AddButton({
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/main/Arceus_X_V3.lua"))()
   	end    
-})
-local Tab2 = Window:MakeTab({
-	Name = "Keyboard",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = Tab:AddSection({
-    Name = "Keyboard"
-})
-
-Tab2:AddButton({
-    Name = "[Built-In Keyboard] Rochips Universal",
-    Callback = function()
-    end
 })
 
 OrionLib:MakeNotification({
