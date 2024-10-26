@@ -55,10 +55,11 @@ Tab1:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/main/Arceus_X_V3.lua"))()
   	end    
 })
-local Section = Tab1:AddSection({
+local Section2 = Tab1:AddSection({
     Name = "Keyboard"
 })
-Tab:AddButton({
+
+Tab1:AddButton({
     Name = "[Built-In Keyboard] Rochips Universal",
     Callback = function()
     end
