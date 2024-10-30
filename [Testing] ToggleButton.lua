@@ -14,4 +14,5 @@ UICorners.Parent = PlayerGUI.ToggleGUI.ToggleFrame.ToggleButton
 local ToggleScript = Instance.New("LocalScript")
 ToggleScript.Name = ToggleScript
 ToggleScript.Parent = PlayerGUI.ScreenGUI.ToggleFrame.ToggleButton
-ToggleScript.Source = print("Testing Debug")
+ToggleScript.Source = Instance:FindFirstChild("Orion") then
+Orion.visible = not Orion.visible
