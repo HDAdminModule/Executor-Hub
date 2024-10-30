@@ -14,4 +14,4 @@ UICorners.Parent = PlayerGUI.ToggleGUI.ToggleFrame.ToggleButton
 local ToggleScript = Instance.New("LocalScript")
 ToggleScript.Name = ToggleScript
 ToggleScript.Parent = PlayerGUI.ScreenGUI.ToggleFrame.ToggleButton
-ToggleScript.Source = nil
+ToggleScript.Source = print("Testing Debug")
