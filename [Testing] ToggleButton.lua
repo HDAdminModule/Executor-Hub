@@ -21,14 +21,16 @@ local Part Instance.New("Part")
      Part.Parent = game.workspace
       Part.Name = "Verified Part"
       Part.Position = 0, 1, 0
- end )}
+ end 
+)}
 local ToggleScript2 = Instance.New("LocalScript")
 ToggleScript2.Name = TogScript2
 ToggleScript2.Parent = ToggleButton
 ToggleScript2.Source = workspace:FindFirstChild("Verified Part") then
 Core.Orion.Visible = not Core.Orion.Visible
 
-if ToggleButton:Connect(MouseButton1Click) thrn
+if ToggleButton:Connect(MouseButton1Click) then
   Core.Orion.Visible = not Core.Orion.Visible
+
 local Hint = Instance.New("Hint")
 Hint.Text = "hai"
