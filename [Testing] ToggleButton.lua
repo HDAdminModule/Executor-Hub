@@ -29,6 +29,6 @@ ToggleScript2.Source = workspace:FindFirstChild("Verified Part") then
 Core.Orion.Visible = not Core.Orion.Visible
 
 if ToggleButton:Connect(MouseButton1Click) thrn
-  
+  Core.Orion.Visible = not Core.Orion.Visible
 local Hint = Instance.New("Hint")
 Hint.Text = "hai"
