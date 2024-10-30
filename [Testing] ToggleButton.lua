@@ -1,3 +1,5 @@
+local Core = game.CoreGUI
+
 local ToggleGUI = Instance.New("ScreenGUI")
 ToggleGUI.Parent = PlayerGUI
 ToggleGUI.Name = ToggleGUI
@@ -13,6 +15,20 @@ local UICorners = Instance.New("UICorners")
 UICorners.Parent = PlayerGUI.ToggleGUI.ToggleFrame.ToggleButton
 local ToggleScript = Instance.New("LocalScript")
 ToggleScript.Name = ToggleScript
-ToggleScript.Parent = PlayerGUI.ScreenGUI.ToggleFrame.ToggleButton
-ToggleScript.Source = Instance:FindFirstChild("Orion") then
-Orion.visible = not Orion.visible
+ToggleScript.Parent = ToggleButton
+ToggleScript.Source = {( if Core:FindFirstChild("Orion") then
+local Part Instance.New("Part")
+     Part.Parent = game.workspace
+      Part.Name = "Verified Part"
+      Part.Position = 0, 1, 0
+ end )}
+local ToggleScript2 = Instance.New("LocalScript")
+ToggleScript2.Name = TogScript2
+ToggleScript2.Parent = ToggleButton
+ToggleScript2.Source = workspace:FindFirstChild("Verified Part") then
+Core.Orion.Visible = not Core.Orion.Visible
+
+if ToggleButton:Connect(MouseButton1Click) thrn
+  
+local Hint = Instance.New("Hint")
+Hint.Text = "hai"
