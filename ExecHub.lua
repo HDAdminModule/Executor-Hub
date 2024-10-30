@@ -27,7 +27,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "hai " ..PlrName.. " !",
+	Name = "hai " ..PlrName.. "!",
 	Callback = function()
   	end    
 })
