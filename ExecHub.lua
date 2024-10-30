@@ -1,7 +1,11 @@
+{(local function ToggleScript()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HDAdminModule/Executor-Hub/refs/heads/main/%5BTesting%5D%20ToggleButton.lua"))()
+end
+)}
 local PlrName = game.Players.LocalPlayer.Name
 
 local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/WRUyYTdY')))()
-
+ToggleScript()
 local Window = OrionLib:MakeWindow({Name = "Executors", HidePremium = false, SaveConfig = true, ConfigFolder = nil})
 
 local Tab = Window:MakeTab({
