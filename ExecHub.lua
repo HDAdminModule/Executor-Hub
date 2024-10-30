@@ -1,5 +1,4 @@
 --hai--
-loadstring(game:HttpGet("https://raw.githubusercontent.com/HDAdminModule/Executor-Hub/refs/heads/main/%5BTesting%5D%20ToggleButton.lua"))()
 
 local PlrName = game.Players.LocalPlayer.Name
 
