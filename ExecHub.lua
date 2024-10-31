@@ -130,8 +130,8 @@ local Tab = Window:MakeTab({
 
 Tab:AddSlider({
 	Name = "Slider",
-	Min = 0,
-	Max = 100000000000,
+	Min = 1,
+	Max = 10000,
 	Default = 50,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
@@ -143,8 +143,8 @@ Tab:AddSlider({
 
 Tab:AddSlider({
 	Name = "Slider",
-	Min = 0,
-	Max = 100000000000,
+	Min = 1,
+	Max = 10000,
 	Default = 50,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
