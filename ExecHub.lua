@@ -4,11 +4,11 @@ local PlrName = game.Players.LocalPlayer.Name
 
 local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/WRUyYTdY')))()
 
-local Window = OrionLib:MakeWindow({Name = "Executors", HidePremium = false, SaveConfig = true, ConfigFolder = nil})
+local Window = OrionLib:MakeWindow({Name = "Exec-Hub", HidePremium = false, SaveConfig = true, ConfigFolder = nil})
 
 local Tab = Window:MakeTab({
 	Name = "Home",
-	Icon = "rbxassetid://77277909292934",
+	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
@@ -120,4 +120,36 @@ Tab:AddButton({
 	return ("This will load in about 2 - 30 seconds" or "according to your device and executor")
 end
   	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "random stuff",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddSlider({
+	Name = "Slider",
+	Min = 0,
+	Max = 100000000000,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "JumpPower",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Humanoid.Jumppower = (Value)
+	end    
+})
+
+Tab:AddSlider({
+	Name = "Slider",
+	Min = 0,
+	Max = 100000000000,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Humanoid.Walkspeed = (Value)
+	end    
 })
