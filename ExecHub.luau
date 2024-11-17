@@ -121,35 +121,3 @@ Tab:AddButton({
 end
   	end    
 })
-
-local Tab = Window:MakeTab({
-	Name = "random stuff",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddSlider({
-	Name = "Slider",
-	Min = 1,
-	Max = 10000,
-	Default = 50,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "JumpPower",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Humanoid.Jumppower = (Value)
-	end    
-})
-
-Tab:AddSlider({
-	Name = "Slider",
-	Min = 1,
-	Max = 10000,
-	Default = 50,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Speed",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Humanoid.Walkspeed = (Value)
-	end    
-})
