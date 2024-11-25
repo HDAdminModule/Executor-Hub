@@ -106,7 +106,6 @@ local function FFWFOE_fake_script() -- V2.LocalScript
 	
 	prent.MouseButton1Click:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/HDAdminModule/Executor-Hub/refs/heads/main/ExecHubV2.luau"))()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/HDAdminModule/Executor-Hub/refs/heads/main/ToggleGui.luau"))()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
