@@ -1,96 +1,108 @@
--- Gui to Lua
--- Version: 3.2
+-- // GUI TO LUA \\ --
 
--- Instances:
+-- // INSTANCES: 10 | SCRIPTS: 3 | MODULES: 0 \\ --
 
-local Loader = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local TextLabel1 = Instance.new("TextLabel")
-local TextLabel2 = Instance.new("TextLabel")
-local V1 = Instance.new("TextButton")
-local V2 = Instance.new("TextButton")
+local UI = {}
 
---Properties:
+-- // StarterGui.Loader \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+UI["1"]["Name"] = [[Loader]]
+UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
 
-Loader.Name = "Loader"
-Loader.Parent = game.ServerScriptService
-Loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+-- // StarterGui.Loader.Frame \\ --
+UI["2"] = Instance.new("Frame", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2"]["Size"] = UDim2.new(0, 348, 0, 221)
+UI["2"]["Position"] = UDim2.new(0.31049, 0, 0.27574, 0)
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2"]["BackgroundTransparency"] = 0.5
 
-Frame.Parent = Loader
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BackgroundTransparency = 0.500
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.310494959, 0, 0.275735289, 0)
-Frame.Size = UDim2.new(0, 348, 0, 221)
+-- // StarterGui.Loader.Frame.UICorner \\ --
+UI["3"] = Instance.new("UICorner", UI["2"])
 
-UICorner.Parent = Frame
 
-TextLabel1.Name = "TextLabel1"
-TextLabel1.Parent = Frame
-TextLabel1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel1.BackgroundTransparency = 1.000
-TextLabel1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel1.BorderSizePixel = 0
-TextLabel1.Size = UDim2.new(0, 348, 0, 38)
-TextLabel1.Font = Enum.Font.SourceSans
-TextLabel1.Text = "Loader"
-TextLabel1.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel1.TextScaled = true
-TextLabel1.TextSize = 14.000
-TextLabel1.TextWrapped = true
+-- // StarterGui.Loader.Frame.TextLabel1 \\ --
+UI["4"] = Instance.new("TextLabel", UI["2"])
+UI["4"]["TextWrapped"] = true
+UI["4"]["BorderSizePixel"] = 0
+UI["4"]["TextScaled"] = true
+UI["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4"]["TextSize"] = 14
+UI["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4"]["BackgroundTransparency"] = 1
+UI["4"]["RichText"] = true
+UI["4"]["Size"] = UDim2.new(0, 348, 0, 38)
+UI["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4"]["Text"] = [[Loader]]
+UI["4"]["Name"] = [[TextLabel1]]
 
-TextLabel2.Name = "TextLabel2"
-TextLabel2.Parent = Frame
-TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel2.BackgroundTransparency = 1.000
-TextLabel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel2.BorderSizePixel = 0
-TextLabel2.Position = UDim2.new(0, 0, 0.171945706, 0)
-TextLabel2.Size = UDim2.new(0, 348, 0, 39)
-TextLabel2.Font = Enum.Font.SourceSans
-TextLabel2.Text = "Which version would you like to execute?"
-TextLabel2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel2.TextScaled = true
-TextLabel2.TextSize = 14.000
-TextLabel2.TextWrapped = true
+-- // StarterGui.Loader.Frame.TextLabel2 \\ --
+UI["5"] = Instance.new("TextLabel", UI["2"])
+UI["5"]["TextWrapped"] = true
+UI["5"]["BorderSizePixel"] = 0
+UI["5"]["TextScaled"] = true
+UI["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5"]["TextSize"] = 14
+UI["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["5"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5"]["BackgroundTransparency"] = 1
+UI["5"]["Size"] = UDim2.new(0, 348, 0, 39)
+UI["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5"]["Text"] = [[Which version would you like to execute?]]
+UI["5"]["Name"] = [[TextLabel2]]
+UI["5"]["Position"] = UDim2.new(0, 0, 0.17195, 0)
 
-V1.Name = "V1"
-V1.Parent = Frame
-V1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-V1.BackgroundTransparency = 0.500
-V1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-V1.BorderSizePixel = 0
-V1.Position = UDim2.new(0.0402298868, 0, 0.49321267, 0)
-V1.Size = UDim2.new(0, 154, 0, 50)
-V1.Font = Enum.Font.FredokaOne
-V1.Text = "ExecHub V1 (Orion Library)"
-V1.TextColor3 = Color3.fromRGB(0, 0, 0)
-V1.TextScaled = true
-V1.TextSize = 14.000
-V1.TextWrapped = true
+-- // StarterGui.Loader.Frame.V1 \\ --
+UI["6"] = Instance.new("TextButton", UI["2"])
+UI["6"]["TextWrapped"] = true
+UI["6"]["BorderSizePixel"] = 0
+UI["6"]["TextSize"] = 14
+UI["6"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6"]["TextScaled"] = true
+UI["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6"]["RichText"] = true
+UI["6"]["Size"] = UDim2.new(0, 154, 0, 50)
+UI["6"]["BackgroundTransparency"] = 0.5
+UI["6"]["Name"] = [[V1]]
+UI["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6"]["Text"] = [[ExecHub V1 (Orion Library)]]
+UI["6"]["Position"] = UDim2.new(0.04023, 0, 0.49321, 0)
 
-V2.Name = "V2"
-V2.Parent = Frame
-V2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-V2.BackgroundTransparency = 0.500
-V2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-V2.BorderSizePixel = 0
-V2.Position = UDim2.new(0.514367819, 0, 0.49321267, 0)
-V2.Size = UDim2.new(0, 154, 0, 50)
-V2.Font = Enum.Font.FredokaOne
-V2.Text = "ExecHub V2 (Custom)"
-V2.TextColor3 = Color3.fromRGB(0, 0, 0)
-V2.TextScaled = true
-V2.TextSize = 14.000
-V2.TextWrapped = true
+-- // StarterGui.Loader.Frame.V1.LocalScript \\ --
+UI["7"] = Instance.new("LocalScript", UI["6"])
 
--- Scripts:
 
-local function QCWBCV_fake_script() -- V1.LocalScript 
-	local script = Instance.new('LocalScript', V1)
+-- // StarterGui.Loader.Frame.V2 \\ --
+UI["8"] = Instance.new("TextButton", UI["2"])
+UI["8"]["TextWrapped"] = true
+UI["8"]["BorderSizePixel"] = 0
+UI["8"]["TextSize"] = 14
+UI["8"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8"]["TextScaled"] = true
+UI["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["8"]["RichText"] = true
+UI["8"]["Size"] = UDim2.new(0, 154, 0, 50)
+UI["8"]["BackgroundTransparency"] = 0.5
+UI["8"]["Name"] = [[V2]]
+UI["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8"]["Text"] = [[ExecHub V2 (Custom)]]
+UI["8"]["Position"] = UDim2.new(0.51437, 0, 0.49321, 0)
 
+-- // StarterGui.Loader.Frame.V2.LocalScript \\ --
+UI["9"] = Instance.new("LocalScript", UI["8"])
+
+
+-- // StarterGui.Loader.Frame.Dragify \\ --
+UI["a"] = Instance.new("LocalScript", UI["2"])
+UI["a"]["Name"] = [[Dragify]]
+
+-- // StarterGui.Loader.Frame.V1.LocalScript \\ --
+local function SCRIPT_7()
+local script = UI["7"]
 	local prent = script.Parent
 	
 	prent.MouseButton1Click:Connect(function() 
@@ -98,10 +110,10 @@ local function QCWBCV_fake_script() -- V1.LocalScript
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(QCWBCV_fake_script)()
-local function MVJO_fake_script() -- V2.LocalScript 
-	local script = Instance.new('LocalScript', V2)
-
+task.spawn(SCRIPT_7)
+-- // StarterGui.Loader.Frame.V2.LocalScript \\ --
+local function SCRIPT_9()
+local script = UI["9"]
 	local prent = script.Parent
 	
 	prent.MouseButton1Click:Connect(function() 
@@ -109,10 +121,10 @@ local function MVJO_fake_script() -- V2.LocalScript
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(MVJO_fake_script)()
-local function HWKUBS_fake_script() -- Frame.Dragify 
-	local script = Instance.new('LocalScript', Frame)
-
+task.spawn(SCRIPT_9)
+-- // StarterGui.Loader.Frame.Dragify \\ --
+local function SCRIPT_a()
+local script = UI["a"]
 	local UIS = game:GetService("UserInputService")
 	function dragify(Frame)
 		dragToggle = nil
@@ -151,4 +163,6 @@ local function HWKUBS_fake_script() -- Frame.Dragify
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(HWKUBS_fake_script)()
+task.spawn(SCRIPT_a)
+
+return UI["1"], require;
