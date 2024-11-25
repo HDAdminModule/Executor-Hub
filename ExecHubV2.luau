@@ -18,6 +18,10 @@ local Synapse = Instance.new("TextButton")
 local SynapseImage = Instance.new("ImageLabel")
 local Krypton = Instance.new("TextButton")
 local KryptonImage = Instance.new("ImageLabel")
+local Close = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Open = Instance.new("ImageButton")
+local UICorner_2 = Instance.new("UICorner")
 
 --Properties:
 
@@ -198,9 +202,38 @@ KryptonImage.BorderSizePixel = 0
 KryptonImage.Size = UDim2.new(0, 200, 0, 50)
 KryptonImage.Image = "rbxassetid://132753629523859"
 
+Close.Name = "Close"
+Close.Parent = Fram
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.887151599, 0, 0.0198791269, 0)
+Close.Size = UDim2.new(0, 39, 0, 38)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = Close
+
+Open.Name = "Open"
+Open.Parent = ExecHub
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.418194324, 0, 0.0718582869, 0)
+Open.Size = UDim2.new(0, 100, 0, 100)
+Open.Visible = false
+Open.Image = "http://www.roblox.com/asset/?id=16541142603"
+
+UICorner_2.Parent = Open
+
 -- Scripts:
 
-local function BPDC_fake_script() -- Fram.Dragify 
+local function TDTFKGF_fake_script() -- Fram.Dragify 
 	local script = Instance.new('LocalScript', Fram)
 
 	local UIS = game:GetService("UserInputService")
@@ -241,8 +274,8 @@ local function BPDC_fake_script() -- Fram.Dragify
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(BPDC_fake_script)()
-local function IOVVQFC_fake_script() -- ArceusX.LocalScript 
+coroutine.wrap(TDTFKGF_fake_script)()
+local function SEZQC_fake_script() -- ArceusX.LocalScript 
 	local script = Instance.new('LocalScript', ArceusX)
 
 	local prent = script.Parent
@@ -251,8 +284,8 @@ local function IOVVQFC_fake_script() -- ArceusX.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/main/Arceus_X_V3.lua"))()
 	end)
 end
-coroutine.wrap(IOVVQFC_fake_script)()
-local function VWEZ_fake_script() -- Kiwi.LocalScript 
+coroutine.wrap(SEZQC_fake_script)()
+local function BTGSCFS_fake_script() -- Kiwi.LocalScript 
 	local script = Instance.new('LocalScript', Kiwi)
 
 	local prent = script.Parent
@@ -261,8 +294,8 @@ local function VWEZ_fake_script() -- Kiwi.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Kiwi-Ui.lua"))()
 	end)
 end
-coroutine.wrap(VWEZ_fake_script)()
-local function YLTH_fake_script() -- CodeX.LocalScript 
+coroutine.wrap(BTGSCFS_fake_script)()
+local function KGHGH_fake_script() -- CodeX.LocalScript 
 	local script = Instance.new('LocalScript', CodeX)
 
 	local prent = script.Parent
@@ -271,8 +304,8 @@ local function YLTH_fake_script() -- CodeX.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Codex.lua"))()
 	end)
 end
-coroutine.wrap(YLTH_fake_script)()
-local function WOMI_fake_script() -- Krnl.LocalScript 
+coroutine.wrap(KGHGH_fake_script)()
+local function RJPKM_fake_script() -- Krnl.LocalScript 
 	local script = Instance.new('LocalScript', Krnl)
 
 	local prent = script.Parent
@@ -281,8 +314,8 @@ local function WOMI_fake_script() -- Krnl.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Knrl.lua"))()
 	end)
 end
-coroutine.wrap(WOMI_fake_script)()
-local function EUMDM_fake_script() -- Synapse.LocalScript 
+coroutine.wrap(RJPKM_fake_script)()
+local function KMHJ_fake_script() -- Synapse.LocalScript 
 	local script = Instance.new('LocalScript', Synapse)
 
 	local prent = script.Parent
@@ -291,8 +324,8 @@ local function EUMDM_fake_script() -- Synapse.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Synapse_X_PE.lua"))()
 	end)
 end
-coroutine.wrap(EUMDM_fake_script)()
-local function DVOIQX_fake_script() -- Krypton.LocalScript 
+coroutine.wrap(KMHJ_fake_script)()
+local function AIFM_fake_script() -- Krypton.LocalScript 
 	local script = Instance.new('LocalScript', Krypton)
 
 	local prent = script.Parent
@@ -301,4 +334,199 @@ local function DVOIQX_fake_script() -- Krypton.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Krypton.lua"))()
 	end)
 end
-coroutine.wrap(DVOIQX_fake_script)()
+coroutine.wrap(AIFM_fake_script)()
+local function VBZGVL_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local Fram = script.Parent.Parent
+	local prent = script.Parent
+	local Open = Fram.Parent.Open
+	
+	prent.MouseButton1Click:Connect(function() 
+		Fram.Visible = false Open.Interactable = true Open.Visible = true
+	end)
+end
+coroutine.wrap(VBZGVL_fake_script)()
+local function HYIESV_fake_script() -- Open.changer 
+	local script = Instance.new('Script', Open)
+
+	
+	while true do
+	script.Parent.ImageColor3 = Color3.new(1,0,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0.1,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0.2,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0.3,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0.4,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0.5,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0.6,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0.7,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0.8,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0.9,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,1,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.9,1,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.8,1,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.7,1,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.6,1,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.5,1,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.4,1,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.3,1,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.2,1,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.1,1,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,1,0)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,1,0.1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,1,0.2)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,1,0.3)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,1,0.4)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,1,0.5)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,1,0.6)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,1,0.7)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,1,0.8)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,1,0.9)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,1,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,0.9,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,0.8,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,0.7,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,0.6,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,0.5,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,0.4,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,0.3,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,0.2,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,0.1,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0,0,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.1,0,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.2,0,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.3,0,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.4,0,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.5,0,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.6,0,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.7,0,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.8,0,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(0.9,0,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0,1)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0,0.9)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0,0.8)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0,0.7)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0,0.6)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0,0.5)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0,0.4)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0,0.3)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0,0.2)
+	wait(0.01)
+	script.Parent.ImageColor3 = Color3.new(1,0,0.1)
+	wait(0.01)
+	end
+	
+end
+coroutine.wrap(HYIESV_fake_script)()
+local function QXRP_fake_script() -- Open.Dragify 
+	local script = Instance.new('LocalScript', Open)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(QXRP_fake_script)()
+local function NNYXWG_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local ExecHub = game.Players.LocalPlayer.PlayerGui.ExecHub
+	local Fram = ExecHub.Fram
+	local prent = script.Parent
+	prent.MouseButton1Click:Connect(function() 
+		Fram.Visible = true prent.Interactable = false prent.Visible = false
+	end)
+	
+end
+coroutine.wrap(NNYXWG_fake_script)()
