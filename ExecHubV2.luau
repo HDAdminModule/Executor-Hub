@@ -1,7 +1,13 @@
--- Gui to Lua
--- Version: 3.2
+--[[
 
--- Instances:
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
 
 local ExecHub = Instance.new("ScreenGui")
 local Fram = Instance.new("Frame")
@@ -21,7 +27,7 @@ local KryptonImage = Instance.new("ImageLabel")
 local Toggle = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
 
---Properties:
+-- Properties
 
 ExecHub.Name = "ExecHub"
 ExecHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -29,191 +35,191 @@ ExecHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Fram.Name = "Fram"
 Fram.Parent = ExecHub
-Fram.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
-Fram.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fram.BackgroundColor3 = Color3.new(0.615686, 0.615686, 0.615686)
+Fram.BorderColor3 = Color3.new(0, 0, 0)
 Fram.BorderSizePixel = 5
 Fram.Position = UDim2.new(0.224564627, 0, 0.282419771, 0)
 Fram.Size = UDim2.new(0, 438, 0, 253)
 
 Credits.Name = "Credits"
 Credits.Parent = Fram
-Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Credits.BackgroundTransparency = 1.000
-Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BackgroundColor3 = Color3.new(1, 1, 1)
+Credits.BackgroundTransparency = 1
+Credits.BorderColor3 = Color3.new(0, 0, 0)
 Credits.BorderSizePixel = 0
 Credits.Position = UDim2.new(-0.00146275351, 0, -0.00216517993, 0)
 Credits.Size = UDim2.new(0, 258, 0, 50)
 Credits.Font = Enum.Font.FredokaOne
 Credits.Text = "Executor-Hub! -made by IncognitoMode52's funny github owner and thanks giang hub for not obfuscating"
-Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextColor3 = Color3.new(0, 0, 0)
 Credits.TextScaled = true
-Credits.TextSize = 14.000
+Credits.TextSize = 14
 Credits.TextWrapped = true
 
 ArceusX.Name = "ArceusX"
 ArceusX.Parent = Fram
-ArceusX.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-ArceusX.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ArceusX.BackgroundColor3 = Color3.new(1, 0, 0)
+ArceusX.BorderColor3 = Color3.new(0, 0, 0)
 ArceusX.BorderSizePixel = 5
 ArceusX.Position = UDim2.new(0.0410958901, 0, 0.237154156, 0)
 ArceusX.Size = UDim2.new(0, 200, 0, 50)
 ArceusX.ZIndex = 0
 ArceusX.Font = Enum.Font.FredokaOne
 ArceusX.Text = "Arceus X"
-ArceusX.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArceusX.TextColor3 = Color3.new(0, 0, 0)
 ArceusX.TextScaled = true
-ArceusX.TextSize = 14.000
+ArceusX.TextSize = 14
 ArceusX.TextWrapped = true
 
 ArceusImage.Name = "ArceusImage"
 ArceusImage.Parent = ArceusX
-ArceusImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ArceusImage.BackgroundTransparency = 1.000
-ArceusImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ArceusImage.BackgroundColor3 = Color3.new(1, 1, 1)
+ArceusImage.BackgroundTransparency = 1
+ArceusImage.BorderColor3 = Color3.new(0, 0, 0)
 ArceusImage.BorderSizePixel = 0
 ArceusImage.Size = UDim2.new(0, 200, 0, 50)
 ArceusImage.Image = "http://www.roblox.com/asset/?id=18309297725"
-ArceusImage.ImageTransparency = 0.500
+ArceusImage.ImageTransparency = 0.5
 
 Kiwi.Name = "Kiwi"
 Kiwi.Parent = Fram
-Kiwi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Kiwi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Kiwi.BackgroundColor3 = Color3.new(1, 1, 1)
+Kiwi.BorderColor3 = Color3.new(0, 0, 0)
 Kiwi.BorderSizePixel = 5
 Kiwi.Position = UDim2.new(0.520547926, 0, 0.237154156, 0)
 Kiwi.Size = UDim2.new(0, 200, 0, 50)
 Kiwi.ZIndex = 0
 Kiwi.Font = Enum.Font.FredokaOne
 Kiwi.Text = "Kiwi"
-Kiwi.TextColor3 = Color3.fromRGB(0, 0, 0)
+Kiwi.TextColor3 = Color3.new(0, 0, 0)
 Kiwi.TextScaled = true
-Kiwi.TextSize = 14.000
+Kiwi.TextSize = 14
 Kiwi.TextWrapped = true
 
 Kiwi_2.Name = "Kiwi"
 Kiwi_2.Parent = Kiwi
-Kiwi_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Kiwi_2.BackgroundTransparency = 1.000
-Kiwi_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Kiwi_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Kiwi_2.BackgroundTransparency = 1
+Kiwi_2.BorderColor3 = Color3.new(0, 0, 0)
 Kiwi_2.BorderSizePixel = 0
 Kiwi_2.Position = UDim2.new(-0.00388580328, 0, -0.00584594719, 0)
 Kiwi_2.Size = UDim2.new(0, 200, 0, 50)
 Kiwi_2.Image = "http://www.roblox.com/asset/?id=13215554134"
-Kiwi_2.ImageTransparency = 0.700
+Kiwi_2.ImageTransparency = 0.699999988079071
 
 CodeX.Name = "CodeX"
 CodeX.Parent = Fram
-CodeX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CodeX.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CodeX.BackgroundColor3 = Color3.new(1, 1, 1)
+CodeX.BorderColor3 = Color3.new(0, 0, 0)
 CodeX.BorderSizePixel = 5
 CodeX.Position = UDim2.new(0.0410958901, 0, 0.482213438, 0)
 CodeX.Size = UDim2.new(0, 200, 0, 50)
 CodeX.ZIndex = 0
 CodeX.Font = Enum.Font.FredokaOne
 CodeX.Text = "CodeX"
-CodeX.TextColor3 = Color3.fromRGB(0, 0, 0)
+CodeX.TextColor3 = Color3.new(0, 0, 0)
 CodeX.TextScaled = true
-CodeX.TextSize = 14.000
+CodeX.TextSize = 14
 CodeX.TextWrapped = true
 
 CodexImage.Name = "CodexImage"
 CodexImage.Parent = CodeX
-CodexImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CodexImage.BackgroundTransparency = 1.000
-CodexImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CodexImage.BackgroundColor3 = Color3.new(1, 1, 1)
+CodexImage.BackgroundTransparency = 1
+CodexImage.BorderColor3 = Color3.new(0, 0, 0)
 CodexImage.BorderSizePixel = 0
 CodexImage.Size = UDim2.new(0, 200, 0, 50)
 CodexImage.Image = "rbxassetid://98756347525096"
-CodexImage.ImageTransparency = 0.500
+CodexImage.ImageTransparency = 0.5
 
 Krnl.Name = "Krnl"
 Krnl.Parent = Fram
-Krnl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Krnl.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Krnl.BackgroundColor3 = Color3.new(1, 1, 1)
+Krnl.BorderColor3 = Color3.new(0, 0, 0)
 Krnl.BorderSizePixel = 5
 Krnl.Position = UDim2.new(0.520547926, 0, 0.482213438, 0)
 Krnl.Size = UDim2.new(0, 200, 0, 50)
 Krnl.ZIndex = 0
 Krnl.Font = Enum.Font.FredokaOne
 Krnl.Text = "Krnl"
-Krnl.TextColor3 = Color3.fromRGB(0, 0, 0)
+Krnl.TextColor3 = Color3.new(0, 0, 0)
 Krnl.TextScaled = true
-Krnl.TextSize = 14.000
+Krnl.TextSize = 14
 Krnl.TextWrapped = true
 
 KrnlImage.Name = "KrnlImage"
 KrnlImage.Parent = Krnl
-KrnlImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-KrnlImage.BackgroundTransparency = 1.000
-KrnlImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KrnlImage.BackgroundColor3 = Color3.new(1, 1, 1)
+KrnlImage.BackgroundTransparency = 1
+KrnlImage.BorderColor3 = Color3.new(0, 0, 0)
 KrnlImage.BorderSizePixel = 0
 KrnlImage.Size = UDim2.new(0, 200, 0, 50)
 KrnlImage.Image = "rbxassetid://72115037866867"
-KrnlImage.ImageTransparency = 0.500
+KrnlImage.ImageTransparency = 0.5
 
 Synapse.Name = "Synapse"
 Synapse.Parent = Fram
-Synapse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Synapse.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Synapse.BackgroundColor3 = Color3.new(1, 1, 1)
+Synapse.BorderColor3 = Color3.new(0, 0, 0)
 Synapse.BorderSizePixel = 5
 Synapse.Position = UDim2.new(0.0410958901, 0, 0.739130437, 0)
 Synapse.Size = UDim2.new(0, 200, 0, 50)
 Synapse.ZIndex = 0
 Synapse.Font = Enum.Font.FredokaOne
 Synapse.Text = "Synapse X PE"
-Synapse.TextColor3 = Color3.fromRGB(0, 0, 0)
+Synapse.TextColor3 = Color3.new(0, 0, 0)
 Synapse.TextScaled = true
-Synapse.TextSize = 14.000
+Synapse.TextSize = 14
 Synapse.TextWrapped = true
 
 SynapseImage.Name = "SynapseImage"
 SynapseImage.Parent = Synapse
-SynapseImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SynapseImage.BackgroundTransparency = 1.000
-SynapseImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SynapseImage.BackgroundColor3 = Color3.new(1, 1, 1)
+SynapseImage.BackgroundTransparency = 1
+SynapseImage.BorderColor3 = Color3.new(0, 0, 0)
 SynapseImage.BorderSizePixel = 0
 SynapseImage.Size = UDim2.new(0, 201, 0, 50)
 SynapseImage.Image = "http://www.roblox.com/asset/?id=9524052389"
-SynapseImage.ImageTransparency = 0.500
+SynapseImage.ImageTransparency = 0.5
 
 Krypton.Name = "Krypton"
 Krypton.Parent = Fram
-Krypton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Krypton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Krypton.BackgroundColor3 = Color3.new(1, 1, 1)
+Krypton.BorderColor3 = Color3.new(0, 0, 0)
 Krypton.BorderSizePixel = 5
 Krypton.Position = UDim2.new(0.520547926, 0, 0.739130437, 0)
 Krypton.Size = UDim2.new(0, 200, 0, 50)
 Krypton.ZIndex = 0
 Krypton.Font = Enum.Font.FredokaOne
 Krypton.Text = "Krypton"
-Krypton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Krypton.TextColor3 = Color3.new(0, 0, 0)
 Krypton.TextScaled = true
-Krypton.TextSize = 14.000
+Krypton.TextSize = 14
 Krypton.TextWrapped = true
 
 KryptonImage.Name = "KryptonImage"
 KryptonImage.Parent = Krypton
-KryptonImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-KryptonImage.BackgroundTransparency = 1.000
-KryptonImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KryptonImage.BackgroundColor3 = Color3.new(1, 1, 1)
+KryptonImage.BackgroundTransparency = 1
+KryptonImage.BorderColor3 = Color3.new(0, 0, 0)
 KryptonImage.BorderSizePixel = 0
 KryptonImage.Size = UDim2.new(0, 200, 0, 50)
 KryptonImage.Image = "rbxassetid://132753629523859"
 
 Toggle.Name = "Toggle"
 Toggle.Parent = ExecHub
-Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Toggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.BackgroundColor3 = Color3.new(1, 1, 1)
+Toggle.BorderColor3 = Color3.new(0, 0, 0)
 Toggle.BorderSizePixel = 0
-Toggle.Position = UDim2.new(0.418194324, 0, 0.0835561454, 0)
+Toggle.Position = UDim2.new(0.418194324, 0, 0.0718582869, 0)
 Toggle.Size = UDim2.new(0, 100, 0, 100)
 Toggle.Image = "http://www.roblox.com/asset/?id=16541142603"
 
 UICorner.Parent = Toggle
 
--- Scripts:
+-- Scripts
 
-local function WWPWMO_fake_script() -- Fram.Dragify 
+local function QCXLOG_fake_script() -- Fram.Dragify 
 	local script = Instance.new('LocalScript', Fram)
 
 	local UIS = game:GetService("UserInputService")
@@ -254,8 +260,8 @@ local function WWPWMO_fake_script() -- Fram.Dragify
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(WWPWMO_fake_script)()
-local function FWGQWHB_fake_script() -- ArceusX.LocalScript 
+coroutine.wrap(QCXLOG_fake_script)()
+local function XDVPIRC_fake_script() -- ArceusX.LocalScript 
 	local script = Instance.new('LocalScript', ArceusX)
 
 	local prent = script.Parent
@@ -264,8 +270,8 @@ local function FWGQWHB_fake_script() -- ArceusX.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/main/Arceus_X_V3.lua"))()
 	end)
 end
-coroutine.wrap(FWGQWHB_fake_script)()
-local function TDILB_fake_script() -- Kiwi.LocalScript 
+coroutine.wrap(XDVPIRC_fake_script)()
+local function BLXX_fake_script() -- Kiwi.LocalScript 
 	local script = Instance.new('LocalScript', Kiwi)
 
 	local prent = script.Parent
@@ -274,8 +280,8 @@ local function TDILB_fake_script() -- Kiwi.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Kiwi-Ui.lua"))()
 	end)
 end
-coroutine.wrap(TDILB_fake_script)()
-local function COPBE_fake_script() -- CodeX.LocalScript 
+coroutine.wrap(BLXX_fake_script)()
+local function LVKLN_fake_script() -- CodeX.LocalScript 
 	local script = Instance.new('LocalScript', CodeX)
 
 	local prent = script.Parent
@@ -284,8 +290,8 @@ local function COPBE_fake_script() -- CodeX.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Codex.lua"))()
 	end)
 end
-coroutine.wrap(COPBE_fake_script)()
-local function CNUVZPX_fake_script() -- Krnl.LocalScript 
+coroutine.wrap(LVKLN_fake_script)()
+local function VITJNV_fake_script() -- Krnl.LocalScript 
 	local script = Instance.new('LocalScript', Krnl)
 
 	local prent = script.Parent
@@ -294,8 +300,8 @@ local function CNUVZPX_fake_script() -- Krnl.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Knrl.lua"))()
 	end)
 end
-coroutine.wrap(CNUVZPX_fake_script)()
-local function VXSVECR_fake_script() -- Synapse.LocalScript 
+coroutine.wrap(VITJNV_fake_script)()
+local function FIDJD_fake_script() -- Synapse.LocalScript 
 	local script = Instance.new('LocalScript', Synapse)
 
 	local prent = script.Parent
@@ -304,8 +310,8 @@ local function VXSVECR_fake_script() -- Synapse.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Synapse_X_PE.lua"))()
 	end)
 end
-coroutine.wrap(VXSVECR_fake_script)()
-local function SQAZX_fake_script() -- Krypton.LocalScript 
+coroutine.wrap(FIDJD_fake_script)()
+local function EZYUUBW_fake_script() -- Krypton.LocalScript 
 	local script = Instance.new('LocalScript', Krypton)
 
 	local prent = script.Parent
@@ -314,8 +320,8 @@ local function SQAZX_fake_script() -- Krypton.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Krypton.lua"))()
 	end)
 end
-coroutine.wrap(SQAZX_fake_script)()
-local function NONO_fake_script() -- Toggle.changer 
+coroutine.wrap(EZYUUBW_fake_script)()
+local function LBMUM_fake_script() -- Toggle.changer 
 	local script = Instance.new('Script', Toggle)
 
 	
@@ -443,8 +449,8 @@ local function NONO_fake_script() -- Toggle.changer
 	end
 	
 end
-coroutine.wrap(NONO_fake_script)()
-local function GTVZDM_fake_script() -- Toggle.Dragify 
+coroutine.wrap(LBMUM_fake_script)()
+local function TJVUW_fake_script() -- Toggle.Dragify 
 	local script = Instance.new('LocalScript', Toggle)
 
 	local UIS = game:GetService("UserInputService")
@@ -485,15 +491,15 @@ local function GTVZDM_fake_script() -- Toggle.Dragify
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(GTVZDM_fake_script)()
-local function AIQFK_fake_script() -- Toggle.LocalScript 
+coroutine.wrap(TJVUW_fake_script)()
+local function OZPAUF_fake_script() -- Toggle.LocalScript 
 	local script = Instance.new('LocalScript', Toggle)
 
 	local Fram = script.Parent.Parent.Fram
 	local prent = script.Parent
-	
 	prent.MouseButton1Click:Connect(function() 
 		Fram.Visible = not Fram.Visible
 	end)
+	
 end
-coroutine.wrap(AIQFK_fake_script)()
+coroutine.wrap(OZPAUF_fake_script)()
