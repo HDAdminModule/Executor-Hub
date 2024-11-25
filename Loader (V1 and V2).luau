@@ -88,7 +88,7 @@ V2.TextWrapped = true
 
 -- Scripts:
 
-local function WESTUR_fake_script() -- V1.LocalScript 
+local function MZGRGV_fake_script() -- V1.LocalScript 
 	local script = Instance.new('LocalScript', V1)
 
 	local prent = script.Parent
@@ -98,19 +98,20 @@ local function WESTUR_fake_script() -- V1.LocalScript
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(WESTUR_fake_script)()
-local function JOFH_fake_script() -- V2.LocalScript 
+coroutine.wrap(MZGRGV_fake_script)()
+local function FFWFOE_fake_script() -- V2.LocalScript 
 	local script = Instance.new('LocalScript', V2)
 
 	local prent = script.Parent
 	
 	prent.MouseButton1Click:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/HDAdminModule/Executor-Hub/refs/heads/main/ExecHubV2.luau"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HDAdminModule/Executor-Hub/refs/heads/main/ToggleGui.luau"))()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(JOFH_fake_script)()
-local function EMNBAGF_fake_script() -- Frame.Dragify 
+coroutine.wrap(FFWFOE_fake_script)()
+local function ZCERJ_fake_script() -- Frame.Dragify 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService("UserInputService")
@@ -151,4 +152,4 @@ local function EMNBAGF_fake_script() -- Frame.Dragify
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(EMNBAGF_fake_script)()
+coroutine.wrap(ZCERJ_fake_script)()
