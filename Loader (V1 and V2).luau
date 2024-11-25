@@ -14,7 +14,7 @@ local V2 = Instance.new("TextButton")
 --Properties:
 
 Loader.Name = "Loader"
-Loader.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Loader.Parent = game.ServerScriptService
 Loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = Loader
@@ -88,7 +88,7 @@ V2.TextWrapped = true
 
 -- Scripts:
 
-local function KZRNWV_fake_script() -- V1.LocalScript 
+local function QCWBCV_fake_script() -- V1.LocalScript 
 	local script = Instance.new('LocalScript', V1)
 
 	local prent = script.Parent
@@ -98,8 +98,8 @@ local function KZRNWV_fake_script() -- V1.LocalScript
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(KZRNWV_fake_script)()
-local function MLAEA_fake_script() -- V2.LocalScript 
+coroutine.wrap(QCWBCV_fake_script)()
+local function MVJO_fake_script() -- V2.LocalScript 
 	local script = Instance.new('LocalScript', V2)
 
 	local prent = script.Parent
@@ -109,4 +109,46 @@ local function MLAEA_fake_script() -- V2.LocalScript
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(MLAEA_fake_script)()
+coroutine.wrap(MVJO_fake_script)()
+local function HWKUBS_fake_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(HWKUBS_fake_script)()
