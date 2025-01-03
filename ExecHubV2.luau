@@ -280,7 +280,12 @@ local function SEZQC_fake_script() -- ArceusX.LocalScript
 
 	local prent = script.Parent
 	
-	prent.MouseButton1Click:Connect(function() 
+	prent.MouseButton1Click:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "ArceusX is kind of delayed", -- Required
+	Text = "becuz it kept spamming", -- Required
+})
+		task.wait(2)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/main/Arceus_X_V3.lua"))()
 	end)
 end
