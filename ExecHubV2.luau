@@ -234,7 +234,6 @@ UICorner_2.Parent = Open
 -- Scripts:
 
 local function TDTFKGF_fake_script() -- Fram.Dragify 
-	local script = Instance.new('LocalScript', Fram)
 
 	local UIS = game:GetService("UserInputService")
 	function dragify(Frame)
@@ -271,14 +270,13 @@ local function TDTFKGF_fake_script() -- Fram.Dragify
 			end
 		end)
 	end
-	dragify(script.Parent)
+	dragify(Fram)
 	
 end
 coroutine.wrap(TDTFKGF_fake_script)()
 local function SEZQC_fake_script() -- ArceusX.LocalScript 
-	local script = Instance.new('LocalScript', ArceusX)
 
-	local prent = script.Parent
+	local prent = ArceusX
 	
 	prent.MouseButton1Click:Connect(function()
 		task.wait(2)
@@ -287,9 +285,8 @@ local function SEZQC_fake_script() -- ArceusX.LocalScript
 end
 coroutine.wrap(SEZQC_fake_script)()
 local function BTGSCFS_fake_script() -- Kiwi.LocalScript 
-	local script = Instance.new('LocalScript', Kiwi)
 
-	local prent = script.Parent
+	local prent = Kiwi
 	
 	prent.MouseButton1Click:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Kiwi-Ui.lua"))()
@@ -297,9 +294,8 @@ local function BTGSCFS_fake_script() -- Kiwi.LocalScript
 end
 coroutine.wrap(BTGSCFS_fake_script)()
 local function KGHGH_fake_script() -- CodeX.LocalScript 
-	local script = Instance.new('LocalScript', CodeX)
 
-	local prent = script.Parent
+	local prent = CodeX
 	
 	prent.MouseButton1Click:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Codex.lua"))()
@@ -307,9 +303,8 @@ local function KGHGH_fake_script() -- CodeX.LocalScript
 end
 coroutine.wrap(KGHGH_fake_script)()
 local function RJPKM_fake_script() -- Krnl.LocalScript 
-	local script = Instance.new('LocalScript', Krnl)
 
-	local prent = script.Parent
+	local prent = Krnl
 	
 	prent.MouseButton1Click:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Knrl.lua"))()
@@ -317,9 +312,8 @@ local function RJPKM_fake_script() -- Krnl.LocalScript
 end
 coroutine.wrap(RJPKM_fake_script)()
 local function KMHJ_fake_script() -- Synapse.LocalScript 
-	local script = Instance.new('LocalScript', Synapse)
 
-	local prent = script.Parent
+	local prent = Synapse
 	
 	prent.MouseButton1Click:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Synapse_X_PE.lua"))()
@@ -327,9 +321,8 @@ local function KMHJ_fake_script() -- Synapse.LocalScript
 end
 coroutine.wrap(KMHJ_fake_script)()
 local function AIFM_fake_script() -- Krypton.LocalScript 
-	local script = Instance.new('LocalScript', Krypton)
 
-	local prent = script.Parent
+	local prent = Krypton
 	
 	prent.MouseButton1Click:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/refs/heads/main/Krypton.lua"))()
@@ -337,10 +330,9 @@ local function AIFM_fake_script() -- Krypton.LocalScript
 end
 coroutine.wrap(AIFM_fake_script)()
 local function VBZGVL_fake_script() -- Close.LocalScript 
-	local script = Instance.new('LocalScript', Close)
 
-	local Fram = script.Parent.Parent
-	local prent = script.Parent
+	local Fram = Fram
+	local prent = Close
 	local Open = Fram.Parent.Open
 	
 	prent.MouseButton1Click:Connect(function() 
@@ -348,137 +340,135 @@ local function VBZGVL_fake_script() -- Close.LocalScript
 	end)
 end
 coroutine.wrap(VBZGVL_fake_script)()
-local function HYIESV_fake_script() -- Open.changer 
-	local script = Instance.new('Script', Open)
-
+local function HYIESV_fake_script() -- Open.changer
+	local prent = Open
 	
 	while true do
-	script.Parent.ImageColor3 = Color3.new(1,0,0)
+	prent.ImageColor3 = Color3.new(1,0,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0.1,0)
+	prent.ImageColor3 = Color3.new(1,0.1,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0.2,0)
+	prent.ImageColor3 = Color3.new(1,0.2,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0.3,0)
+	prent.ImageColor3 = Color3.new(1,0.3,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0.4,0)
+	prent.ImageColor3 = Color3.new(1,0.4,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0.5,0)
+	prent.ImageColor3 = Color3.new(1,0.5,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0.6,0)
+	prent.ImageColor3 = Color3.new(1,0.6,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0.7,0)
+	prent.ImageColor3 = Color3.new(1,0.7,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0.8,0)
+	prent.ImageColor3 = Color3.new(1,0.8,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0.9,0)
+	prent.ImageColor3 = Color3.new(1,0.9,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,1,0)
+	prent.ImageColor3 = Color3.new(1,1,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.9,1,0)
+	prent.ImageColor3 = Color3.new(0.9,1,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.8,1,0)
+	prent.ImageColor3 = Color3.new(0.8,1,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.7,1,0)
+	prent.ImageColor3 = Color3.new(0.7,1,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.6,1,0)
+	prent.ImageColor3 = Color3.new(0.6,1,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.5,1,0)
+	prent.ImageColor3 = Color3.new(0.5,1,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.4,1,0)
+	prent.ImageColor3 = Color3.new(0.4,1,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.3,1,0)
+	prent.ImageColor3 = Color3.new(0.3,1,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.2,1,0)
+	prent.ImageColor3 = Color3.new(0.2,1,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.1,1,0)
+	prent.ImageColor3 = Color3.new(0.1,1,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,1,0)
+	prent.ImageColor3 = Color3.new(0,1,0)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,1,0.1)
+	prent.ImageColor3 = Color3.new(0,1,0.1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,1,0.2)
+	prent.ImageColor3 = Color3.new(0,1,0.2)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,1,0.3)
+	prent.ImageColor3 = Color3.new(0,1,0.3)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,1,0.4)
+	prent.ImageColor3 = Color3.new(0,1,0.4)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,1,0.5)
+	prent.ImageColor3 = Color3.new(0,1,0.5)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,1,0.6)
+	prent.ImageColor3 = Color3.new(0,1,0.6)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,1,0.7)
+	prent.ImageColor3 = Color3.new(0,1,0.7)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,1,0.8)
+	prent.ImageColor3 = Color3.new(0,1,0.8)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,1,0.9)
+	prent.ImageColor3 = Color3.new(0,1,0.9)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,1,1)
+	prent.ImageColor3 = Color3.new(0,1,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,0.9,1)
+	prent.ImageColor3 = Color3.new(0,0.9,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,0.8,1)
+	prent.ImageColor3 = Color3.new(0,0.8,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,0.7,1)
+	prent.ImageColor3 = Color3.new(0,0.7,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,0.6,1)
+	prent.ImageColor3 = Color3.new(0,0.6,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,0.5,1)
+	prent.ImageColor3 = Color3.new(0,0.5,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,0.4,1)
+	prent.ImageColor3 = Color3.new(0,0.4,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,0.3,1)
+	prent.ImageColor3 = Color3.new(0,0.3,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,0.2,1)
+	prent.ImageColor3 = Color3.new(0,0.2,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,0.1,1)
+	prent.ImageColor3 = Color3.new(0,0.1,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0,0,1)
+	prent.ImageColor3 = Color3.new(0,0,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.1,0,1)
+	prent.ImageColor3 = Color3.new(0.1,0,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.2,0,1)
+	prent.ImageColor3 = Color3.new(0.2,0,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.3,0,1)
+	prent.ImageColor3 = Color3.new(0.3,0,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.4,0,1)
+	prent.ImageColor3 = Color3.new(0.4,0,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.5,0,1)
+	prent.ImageColor3 = Color3.new(0.5,0,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.6,0,1)
+	prent.ImageColor3 = Color3.new(0.6,0,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.7,0,1)
+	prent.ImageColor3 = Color3.new(0.7,0,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.8,0,1)
+	prent.ImageColor3 = Color3.new(0.8,0,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(0.9,0,1)
+	prent.ImageColor3 = Color3.new(0.9,0,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0,1)
+	prent.ImageColor3 = Color3.new(1,0,1)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0,0.9)
+	prent.ImageColor3 = Color3.new(1,0,0.9)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0,0.8)
+	prent.ImageColor3 = Color3.new(1,0,0.8)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0,0.7)
+	prent.ImageColor3 = Color3.new(1,0,0.7)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0,0.6)
+	prent.ImageColor3 = Color3.new(1,0,0.6)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0,0.5)
+	prent.ImageColor3 = Color3.new(1,0,0.5)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0,0.4)
+	prent.ImageColor3 = Color3.new(1,0,0.4)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0,0.3)
+	prent.ImageColor3 = Color3.new(1,0,0.3)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0,0.2)
+	prent.ImageColor3 = Color3.new(1,0,0.2)
 	wait(0.01)
-	script.Parent.ImageColor3 = Color3.new(1,0,0.1)
+	prent.ImageColor3 = Color3.new(1,0,0.1)
 	wait(0.01)
 	end
 	
 end
 coroutine.wrap(HYIESV_fake_script)()
-local function QXRP_fake_script() -- Open.Dragify 
-	local script = Instance.new('LocalScript', Open)
+local function QXRP_fake_script() -- Open.Dragify
 
 	local UIS = game:GetService("UserInputService")
 	function dragify(Frame)
@@ -515,16 +505,15 @@ local function QXRP_fake_script() -- Open.Dragify
 			end
 		end)
 	end
-	dragify(script.Parent)
-	
+	dragify(Open)
+	dragify(Fram)
 end
 coroutine.wrap(QXRP_fake_script)()
 local function NNYXWG_fake_script() -- Open.LocalScript 
-	local script = Instance.new('LocalScript', Open)
 
 	local ExecHub = game.Players.LocalPlayer.PlayerGui.ExecHub
 	local Fram = ExecHub.Fram
-	local prent = script.Parent
+	local prent = Open
 	prent.MouseButton1Click:Connect(function() 
 		Fram.Visible = true prent.Interactable = false prent.Visible = false
 	end)
