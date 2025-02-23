@@ -14,7 +14,7 @@ local V2 = Instance.new("TextButton")
 --Properties:
 
 Loader.Name = "Loader"
-Loader.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Loader.Parent = game.CoreGui
 Loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = Loader
@@ -89,29 +89,26 @@ V2.TextWrapped = true
 -- Scripts:
 
 local function MZGRGV_fake_script() -- V1.LocalScript 
-	local script = Instance.new('LocalScript', V1)
 
-	local prent = script.Parent
+	local prent = V1
 	
 	prent.MouseButton1Click:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/HDAdminModule/Executor-Hub/refs/heads/main/ExecHub.luau"))()
-		script.Parent.Parent.Parent:Destroy()
+		Loader:Destroy()
 	end)
 end
 coroutine.wrap(MZGRGV_fake_script)()
 local function FFWFOE_fake_script() -- V2.LocalScript 
-	local script = Instance.new('LocalScript', V2)
 
-	local prent = script.Parent
+	local prent = V2
 	
 	prent.MouseButton1Click:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/HDAdminModule/Executor-Hub/refs/heads/main/ExecHubV2.luau"))()
-		script.Parent.Parent.Parent:Destroy()
+		Loader:Destroy()
 	end)
 end
 coroutine.wrap(FFWFOE_fake_script)()
 local function ZCERJ_fake_script() -- Frame.Dragify 
-	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService("UserInputService")
 	function dragify(Frame)
@@ -148,7 +145,7 @@ local function ZCERJ_fake_script() -- Frame.Dragify
 			end
 		end)
 	end
-	dragify(script.Parent)
+	dragify(Frame)
 	
 end
 coroutine.wrap(ZCERJ_fake_script)()
