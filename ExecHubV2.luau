@@ -26,7 +26,7 @@ local UICorner_2 = Instance.new("UICorner")
 --Properties:
 
 ExecHub.Name = "ExecHub"
-ExecHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ExecHub.Parent = game.CoreGui
 ExecHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Fram.Name = "Fram"
